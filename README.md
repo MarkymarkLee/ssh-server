@@ -6,8 +6,8 @@
 
 ## Setup steps
 
-1.  Install cuda and docker
-    Recommended: https://developer.nvidia.com/cuda-downloads
+1.  Install cuda and docker. \
+    Recommended resource: https://developer.nvidia.com/cuda-downloads
 
 2.  Verify the installation with 
     ```
@@ -37,11 +37,11 @@
     +---------------------------------------------------------------------------------------+
     ```
 
-2.  Edit `Dockerfile` and `run.sh` to your ideal settings.
+2.  Edit `Dockerfile` and `run.sh` to your ideal settings. \
     The default settings include user mark with root privilege and the password for both the root and mark is 0000.
 
-3.  run `bash run.sh`
+3.  Run `bash run.sh`.
 
-4.  To connect to the ssh server, run `ssh -p 2223 mark@localhost`.
+4.  To connect to the ssh server, run `ssh -p 2223 mark@localhost`. \
     Note that the 2223 is the port I used and can be changed in `run.sh`.
 
