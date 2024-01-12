@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p server
+
 # Build the Docker image
 docker build -t ssh-server -f Dockerfile .
 
@@ -10,5 +12,5 @@ docker run -d --name ssh-server \
     -p 2223:22 \
     --privileged \
     --gpus all \
-    --mount type=bind,source="$(pwd)/server",target=/home/mark \
+    --mount type=bind,source="$(pwd)/server",target=/mnt \
     ssh-server

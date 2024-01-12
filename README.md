@@ -45,3 +45,6 @@
 4.  To connect to the ssh server, run `ssh -p 2223 mark@localhost`. \
     Note that the 2223 is the port I used and can be changed in `run.sh`.
 
+## Mounted directory
+
+The default settings mounts the `/mnt` in the container to the current directory's `server`.
